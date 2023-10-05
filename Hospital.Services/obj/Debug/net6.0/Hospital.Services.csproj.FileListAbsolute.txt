@@ -1,0 +1,11 @@
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\bin\Debug\net6.0\Hospital.Services.deps.json
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\bin\Debug\net6.0\Hospital.Services.dll
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\bin\Debug\net6.0\Hospital.Services.pdb
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.AssemblyInfoInputs.cache
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.AssemblyInfo.cs
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.csproj.CoreCompileInputs.cache
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.dll
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\refint\Hospital.Services.dll
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\Hospital.Services.pdb
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Services\obj\Debug\net6.0\ref\Hospital.Services.dll
