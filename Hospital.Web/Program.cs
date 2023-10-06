@@ -1,6 +1,9 @@
 using Hospital.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Hospital.Utilities;
+using Hospital.Repositories.Interface;
+using Hospital.Repositories.Implementation;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 {
@@ -8,8 +11,12 @@ WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefautConnection")));
 
-    builder.Services.AddDefaultIdentity<IdentityUser>()
+    builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+    builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+    builder.Services.AddRazorPages();
 }
 
 WebApplication? app = builder.Build();
@@ -21,15 +28,25 @@ app.UseAuthentication();;
         app.UseHsts();
     }
     app.UseHttpsRedirection();
+    DataSedding();
     app.UseStaticFiles();
 
     app.UseRouting();
-
+    app.MapRazorPages();
     app.UseAuthorization();
 
     app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
+        pattern: "{Area=Patient}/{controller=Home}/{action=Index}/{id?}");
 
     app.Run();
+}
+
+void DataSedding()
+{
+    using(var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+        db.Initialize();
+    }
 }

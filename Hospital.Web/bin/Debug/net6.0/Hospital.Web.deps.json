@@ -9,6 +9,7 @@
       "Hospital.Web/1.0.0": {
         "dependencies": {
           "Hospital.Repositories": "1.0.0",
+          "Hospital.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22",
           "Microsoft.AspNetCore.Identity.UI": "6.0.21",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
@@ -2858,6 +2859,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Hospital.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22"
+        },
+        "runtime": {
+          "Hospital.Models.dll": {}
+        }
+      },
       "Hospital.Repositories/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22",
@@ -2865,6 +2874,16 @@
         },
         "runtime": {
           "Hospital.Repositories.dll": {}
+        }
+      },
+      "Hospital.Utilities/1.0.0": {
+        "dependencies": {
+          "Hospital.Models": "1.0.0",
+          "Hospital.Repositories": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22"
+        },
+        "runtime": {
+          "Hospital.Utilities.dll": {}
         }
       }
     }
@@ -4534,7 +4553,17 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "Hospital.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hospital.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hospital.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

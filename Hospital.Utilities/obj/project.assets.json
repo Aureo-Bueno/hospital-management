@@ -1046,11 +1046,24 @@
           }
         }
       },
+      "Hospital.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        }
+      },
       "Hospital.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.21",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
         },
         "compile": {
@@ -2800,6 +2813,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Hospital.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Models/Hospital.Models.csproj",
+      "msbuildProject": "../Hospital.Models/Hospital.Models.csproj"
+    },
     "Hospital.Repositories/1.0.0": {
       "type": "project",
       "path": "../Hospital.Repositories/Hospital.Repositories.csproj",
@@ -2808,6 +2826,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Hospital.Models >= 1.0.0",
       "Hospital.Repositories >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.22"
     ]
@@ -2839,6 +2858,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Models\\Hospital.Models.csproj": {
+              "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Models\\Hospital.Models.csproj"
+            },
             "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Repositories\\Hospital.Repositories.csproj": {
               "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Repositories\\Hospital.Repositories.csproj"
             }

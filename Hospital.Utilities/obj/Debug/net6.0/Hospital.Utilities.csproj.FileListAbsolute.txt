@@ -10,3 +10,8 @@ C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\obj\Debug\net6.0\refint\H
 C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\obj\Debug\net6.0\Hospital.Utilities.pdb
 C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\obj\Debug\net6.0\ref\Hospital.Utilities.dll
 C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\obj\Debug\net6.0\Hospital.Utilities.csproj.AssemblyReference.cache
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\bin\Debug\net6.0\Hospital.Models.dll
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\bin\Debug\net6.0\Hospital.Repositories.dll
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\bin\Debug\net6.0\Hospital.Models.pdb
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\bin\Debug\net6.0\Hospital.Repositories.pdb
+C:\Users\Aureo SMT\Desktop\Hospital\Hospital.Utilities\obj\Debug\net6.0\Hospital.Utilities.csproj.CopyComplete

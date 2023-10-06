@@ -4189,11 +4189,24 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Hospital.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        }
+      },
       "Hospital.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.21",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
         },
         "compile": {
@@ -4201,6 +4214,21 @@
         },
         "runtime": {
           "bin/placeholder/Hospital.Repositories.dll": {}
+        }
+      },
+      "Hospital.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hospital.Models": "1.0.0",
+          "Hospital.Repositories": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Utilities.dll": {}
         }
       }
     }
@@ -11756,15 +11784,26 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Hospital.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Models/Hospital.Models.csproj",
+      "msbuildProject": "../Hospital.Models/Hospital.Models.csproj"
+    },
     "Hospital.Repositories/1.0.0": {
       "type": "project",
       "path": "../Hospital.Repositories/Hospital.Repositories.csproj",
       "msbuildProject": "../Hospital.Repositories/Hospital.Repositories.csproj"
+    },
+    "Hospital.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Utilities/Hospital.Utilities.csproj",
+      "msbuildProject": "../Hospital.Utilities/Hospital.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hospital.Repositories >= 1.0.0",
+      "Hospital.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.22",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.21",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
@@ -11802,6 +11841,9 @@
           "projectReferences": {
             "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Repositories\\Hospital.Repositories.csproj": {
               "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Repositories\\Hospital.Repositories.csproj"
+            },
+            "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Utilities\\Hospital.Utilities.csproj": {
+              "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Utilities\\Hospital.Utilities.csproj"
             }
           }
         }
