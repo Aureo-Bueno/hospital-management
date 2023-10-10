@@ -3,7 +3,7 @@
 namespace Hospital.Repositories.Interface;
 public interface IRepository<T> : IDisposable
 {
-    Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
+    IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
     T GetById(object id);
     Task<T> GetByIdAsync(object id);
     void Add(T entity);

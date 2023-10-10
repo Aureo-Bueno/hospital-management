@@ -65,7 +65,7 @@ public class Repository<T> : IDisposable, IRepository<T> where T : class
         this.disposed = true;
     }
 
-    public async Task<IEnumerable<T>> GetAll(
+    public IEnumerable<T> GetAll(
         Expression<Func<T, bool>> filter = null,
         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
         string includeProperties = "")
@@ -84,11 +84,11 @@ public class Repository<T> : IDisposable, IRepository<T> where T : class
 
         if (orderBy is not null)
         {
-            return await orderBy(query).ToListAsync();
+            return orderBy(query).ToList();
         }
         else
         {
-            return await query.ToListAsync();
+            return query.ToList();
         }
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UzTSgfBv7XtBYOfpzoO9bLI6Ir6mnyuggPbfG+oqi1pUQrp18RHG7U9E95FmHz5f7/6+8V18FpUfrwj7daX+rg==",
+  "dgSpecHash": "M91AXCOLBCAvag3KNg7Q2Y4PQlSz2hMUnZEnFiil5T+xuSRNopzDfaO/SYTmY1bcR9Matj0NbC+G2sxJkjFjxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aureo SMT\\Desktop\\Hospital\\Hospital.Models\\Hospital.Models.csproj",
+  "projectFilePath": "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Models\\Hospital.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.22\\microsoft.aspnetcore.cryptography.internal.6.0.22.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.22\\microsoft.aspnetcore.cryptography.keyderivation.6.0.22.nupkg.sha512",
