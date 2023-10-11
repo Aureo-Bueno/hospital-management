@@ -3,6 +3,7 @@ using Hospital.Utilities;
 using Hospital.Repositories.Interface;
 using Hospital.Models;
 using System.Linq;
+using Hospital.Services.Interfaces;
 
 namespace Hospital.Services;
 public class HospitalInfoService : IHospitalInfo
@@ -13,7 +14,7 @@ public class HospitalInfoService : IHospitalInfo
         _unitOfWork = unitOfWork;
     }
 
-    public void DeleteHospital(int id)
+    public void DeleteHospital(Guid id)
     {
         HospitalInfo? result = _unitOfWork.Repository<HospitalInfo>().GetById(id);
         _unitOfWork.Repository<HospitalInfo>().Delete(result);
@@ -50,7 +51,7 @@ public class HospitalInfoService : IHospitalInfo
         };
     }
 
-    public HospitalInfoViewModel GetHospitalById(int id)
+    public HospitalInfoViewModel GetHospitalById(Guid id)
     {
         HospitalInfo? result = _unitOfWork.Repository<HospitalInfo>().GetById(id);
         HospitalInfoViewModel viewModel = new(result);

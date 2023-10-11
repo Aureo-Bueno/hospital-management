@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FKJ0dusPqCAMCux9V1EaB8GY9h7zFfgElrn4+SNOWOr5d1Pz4MLP72qrMaPRsYpn2tRMYUbuRVK4sA/oAm7NGg==",
+  "dgSpecHash": "0RQCPabvp7wYP4Cn4KmSATjoq8D3Dwt/+yDG8VeeNG0lFUQ1vdCy/2wGIHK0p4es305xRVClOhCNB8IEeLZdSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Web\\Hospital.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aureo SMT\\.nuget\\packages\\cloudscribe.pagination.models\\1.1.0\\cloudscribe.pagination.models.1.1.0.nupkg.sha512",
+    "C:\\Users\\Aureo SMT\\.nuget\\packages\\cloudscribe.web.pagination\\6.0.0\\cloudscribe.web.pagination.6.0.0.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -186,6 +188,7 @@
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Aureo SMT\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

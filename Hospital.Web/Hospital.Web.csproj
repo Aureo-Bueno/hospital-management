@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="cloudscribe.Web.Pagination" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.22" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.21" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.21" />
@@ -19,9 +20,9 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Hospital.Repositories\Hospital.Repositories.csproj" />
 	  <ProjectReference Include="..\Hospital.Utilities\Hospital.Utilities.csproj" />
+		<ProjectReference Include="..\Hospital.Services\Hospital.Services.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Areas\Admin\Views\" />
 	  <Folder Include="Areas\Doctor\Controllers\" />
 	  <Folder Include="Areas\Doctor\Views\" />
 	</ItemGroup>

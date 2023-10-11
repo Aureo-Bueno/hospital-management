@@ -9,16 +9,41 @@
       "Hospital.Web/1.0.0": {
         "dependencies": {
           "Hospital.Repositories": "1.0.0",
+          "Hospital.Services": "1.0.0",
           "Hospital.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.22",
           "Microsoft.AspNetCore.Identity.UI": "6.0.21",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.22",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.21",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.22",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
+          "cloudscribe.Web.Pagination": "6.0.0"
         },
         "runtime": {
           "Hospital.Web.dll": {}
+        }
+      },
+      "cloudscribe.Pagination.Models/1.1.0": {
+        "dependencies": {
+          "System.Linq.Queryable": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/cloudscribe.Pagination.Models.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "cloudscribe.Web.Pagination/6.0.0": {
+        "dependencies": {
+          "System.Linq.Queryable": "4.3.0",
+          "cloudscribe.Pagination.Models": "1.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/cloudscribe.Web.Pagination.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
         }
       },
       "Humanizer/2.14.1": {
@@ -2292,6 +2317,18 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Linq.Queryable/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Memory/4.5.5": {},
       "System.Net.Http/4.3.0": {
         "dependencies": {
@@ -2763,6 +2800,15 @@
           "Hospital.Repositories.dll": {}
         }
       },
+      "Hospital.Services/1.0.0": {
+        "dependencies": {
+          "Hospital.Utilities": "1.0.0",
+          "Hospital.ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "Hospital.Services.dll": {}
+        }
+      },
       "Hospital.Utilities/1.0.0": {
         "dependencies": {
           "Hospital.Models": "1.0.0",
@@ -2773,6 +2819,14 @@
         "runtime": {
           "Hospital.Utilities.dll": {}
         }
+      },
+      "Hospital.ViewModel/1.0.0": {
+        "dependencies": {
+          "Hospital.Models": "1.0.0"
+        },
+        "runtime": {
+          "Hospital.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -2781,6 +2835,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "cloudscribe.Pagination.Models/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RR2IPdUfavFEls5AF32p9D2S993M/wsxIlO2DX9nlgH+zEl4l0800AQSucdarUOuhAEbmXRr+dtgxcTOLuKXrw==",
+      "path": "cloudscribe.pagination.models/1.1.0",
+      "hashPath": "cloudscribe.pagination.models.1.1.0.nupkg.sha512"
+    },
+    "cloudscribe.Web.Pagination/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6f9M7BsafnMcJhhoF2GWun+C+7N2w66dgOk0gsw3dSyOJ1L5VV3l1BDq3fUuPgIsUxl9G64mHoyMQOGTMHK0TA==",
+      "path": "cloudscribe.web.pagination/6.0.0",
+      "hashPath": "cloudscribe.web.pagination.6.0.0.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",
@@ -4056,6 +4124,13 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+    "System.Linq.Queryable/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "path": "system.linq.queryable/4.3.0",
+      "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
+    },
     "System.Memory/4.5.5": {
       "type": "package",
       "serviceable": true,
@@ -4409,7 +4484,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Hospital.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hospital.Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hospital.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

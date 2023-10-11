@@ -587,3 +587,9 @@ C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\obj\Debug\net6.0\ref
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\obj\Debug\net6.0\Hospital.Web.pdb
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\obj\Debug\net6.0\Hospital.Web.genruntimeconfig.cache
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\obj\Debug\net6.0\ref\Hospital.Web.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hospital.Services.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hospital.ViewModel.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hospital.Services.pdb
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hospital.ViewModel.pdb
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\cloudscribe.Pagination.Models.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\cloudscribe.Web.Pagination.dll

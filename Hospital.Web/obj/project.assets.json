@@ -2,6 +2,34 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "cloudscribe.Pagination.Models/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Queryable": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/cloudscribe.Pagination.Models.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/cloudscribe.Pagination.Models.dll": {}
+        }
+      },
+      "cloudscribe.Web.Pagination/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Queryable": "4.3.0",
+          "cloudscribe.Pagination.Models": "1.1.0"
+        },
+        "compile": {
+          "lib/net6.0/cloudscribe.Web.Pagination.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/cloudscribe.Web.Pagination.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -3121,6 +3149,27 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
+      "System.Linq.Queryable/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Linq.Queryable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Linq.Queryable.dll": {}
+        }
+      },
       "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
@@ -4106,6 +4155,20 @@
           "bin/placeholder/Hospital.Repositories.dll": {}
         }
       },
+      "Hospital.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hospital.Utilities": "1.0.0",
+          "Hospital.ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Services.dll": {}
+        }
+      },
       "Hospital.Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4121,10 +4184,47 @@
         "runtime": {
           "bin/placeholder/Hospital.Utilities.dll": {}
         }
+      },
+      "Hospital.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hospital.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.ViewModel.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "cloudscribe.Pagination.Models/1.1.0": {
+      "sha512": "RR2IPdUfavFEls5AF32p9D2S993M/wsxIlO2DX9nlgH+zEl4l0800AQSucdarUOuhAEbmXRr+dtgxcTOLuKXrw==",
+      "type": "package",
+      "path": "cloudscribe.pagination.models/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudscribe.pagination.models.1.1.0.nupkg.sha512",
+        "cloudscribe.pagination.models.nuspec",
+        "lib/netstandard2.0/cloudscribe.Pagination.Models.dll"
+      ]
+    },
+    "cloudscribe.Web.Pagination/6.0.0": {
+      "sha512": "6f9M7BsafnMcJhhoF2GWun+C+7N2w66dgOk0gsw3dSyOJ1L5VV3l1BDq3fUuPgIsUxl9G64mHoyMQOGTMHK0TA==",
+      "type": "package",
+      "path": "cloudscribe.web.pagination/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudscribe.web.pagination.6.0.0.nupkg.sha512",
+        "cloudscribe.web.pagination.nuspec",
+        "lib/net6.0/cloudscribe.Web.Pagination.dll"
+      ]
+    },
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -8985,6 +9085,65 @@
         "system.linq.expressions.nuspec"
       ]
     },
+    "System.Linq.Queryable/4.3.0": {
+      "sha512": "In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "type": "package",
+      "path": "system.linq.queryable/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/monoandroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.Queryable.dll",
+        "lib/netstandard1.3/System.Linq.Queryable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/monoandroid10/_._",
+        "ref/monotouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.Queryable.dll",
+        "ref/netcore50/System.Linq.Queryable.xml",
+        "ref/netcore50/de/System.Linq.Queryable.xml",
+        "ref/netcore50/es/System.Linq.Queryable.xml",
+        "ref/netcore50/fr/System.Linq.Queryable.xml",
+        "ref/netcore50/it/System.Linq.Queryable.xml",
+        "ref/netcore50/ja/System.Linq.Queryable.xml",
+        "ref/netcore50/ko/System.Linq.Queryable.xml",
+        "ref/netcore50/ru/System.Linq.Queryable.xml",
+        "ref/netcore50/zh-hans/System.Linq.Queryable.xml",
+        "ref/netcore50/zh-hant/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/System.Linq.Queryable.dll",
+        "ref/netstandard1.0/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/de/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/es/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/fr/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/it/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/ja/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/ko/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/ru/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/zh-hans/System.Linq.Queryable.xml",
+        "ref/netstandard1.0/zh-hant/System.Linq.Queryable.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.linq.queryable.4.3.0.nupkg.sha512",
+        "system.linq.queryable.nuspec"
+      ]
+    },
     "System.Memory/4.5.5": {
       "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
@@ -11502,22 +11661,34 @@
       "path": "../Hospital.Repositories/Hospital.Repositories.csproj",
       "msbuildProject": "../Hospital.Repositories/Hospital.Repositories.csproj"
     },
+    "Hospital.Services/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Services/Hospital.Services.csproj",
+      "msbuildProject": "../Hospital.Services/Hospital.Services.csproj"
+    },
     "Hospital.Utilities/1.0.0": {
       "type": "project",
       "path": "../Hospital.Utilities/Hospital.Utilities.csproj",
       "msbuildProject": "../Hospital.Utilities/Hospital.Utilities.csproj"
+    },
+    "Hospital.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.ViewModel/Hospital.ViewModel.csproj",
+      "msbuildProject": "../Hospital.ViewModel/Hospital.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hospital.Repositories >= 1.0.0",
+      "Hospital.Services >= 1.0.0",
       "Hospital.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.22",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.21",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.21",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
+      "cloudscribe.Web.Pagination >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -11549,6 +11720,9 @@
           "projectReferences": {
             "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Repositories\\Hospital.Repositories.csproj": {
               "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Repositories\\Hospital.Repositories.csproj"
+            },
+            "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Services\\Hospital.Services.csproj": {
+              "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Services\\Hospital.Services.csproj"
             },
             "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Utilities\\Hospital.Utilities.csproj": {
               "projectPath": "C:\\Users\\Aureo SMT\\Desktop\\hospital-management\\Hospital.Utilities\\Hospital.Utilities.csproj"
@@ -11591,6 +11765,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.16, )"
+          },
+          "cloudscribe.Web.Pagination": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
