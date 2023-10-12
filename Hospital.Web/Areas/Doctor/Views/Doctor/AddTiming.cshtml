@@ -1,0 +1,57 @@
+﻿@using Hospital.Models;
+@model Hospital.ViewModel.TimingViewModel
+
+@{
+    ViewData["Title"] = "AddTiming";
+}
+
+<h1>AddTiming</h1>
+
+<h4>TimingViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddTiming">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DoctorId" class="control-label"></label>
+                <input asp-for="DoctorId" class="form-control" />
+                <span asp-validation-for="DoctorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" asp-items="@Html.GetEnumSelectList<Status>()" class="form-control"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MorningShiftStartTime"></label>
+                <select asp-for="MorningShiftStartTime" asp-items="@ViewBag.morningStart" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MorningShiftEndTime"></label>
+                <select asp-for="MorningShiftEndTime" asp-items="@ViewBag.morningEnd" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AfternoonShiftStartTime"></label>
+                <select asp-for="AfternoonShiftStartTime" asp-items="@ViewBag.afternoonStart" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AfternoonShiftEndTime"></label>
+                <select asp-for="AfternoonShiftEndTime" asp-items="@ViewBag.afternoonEnd" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

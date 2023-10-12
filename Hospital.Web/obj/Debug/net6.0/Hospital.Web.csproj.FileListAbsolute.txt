@@ -593,3 +593,10 @@ C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hos
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Hospital.ViewModel.pdb
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\cloudscribe.Pagination.Models.dll
 C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\cloudscribe.Web.Pagination.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

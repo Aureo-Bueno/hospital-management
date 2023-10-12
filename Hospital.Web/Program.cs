@@ -21,8 +21,10 @@ WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
     builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
     builder.Services.AddScoped<IEmailSender, EmailSender>();
     builder.Services.AddTransient<IHospitalInfo, HospitalInfoService>();
+    builder.Services.AddTransient<IDoctorService, DoctorService>();
     builder.Services.AddScoped<IContactService, ContactService>();
     builder.Services.AddTransient<IRoomService, RoomService>();
+    builder.Services.AddTransient<IApplicationUserService, ApplicationUserService>();
 
     builder.Services.AddRazorPages();
 }
