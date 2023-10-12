@@ -693,17 +693,24 @@ namespace Hospital.Repositories.Migrations
                     b.Property<DateTime>("DOB")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("DepartmentId")
+                    b.Property<Guid?>("DepartmentId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Gender")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDoctor")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PictureUri")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -915,9 +922,7 @@ namespace Hospital.Repositories.Migrations
                 {
                     b.HasOne("Hospital.Models.Department", "Department")
                         .WithMany("Employees")
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DepartmentId");
 
                     b.Navigation("Department");
                 });

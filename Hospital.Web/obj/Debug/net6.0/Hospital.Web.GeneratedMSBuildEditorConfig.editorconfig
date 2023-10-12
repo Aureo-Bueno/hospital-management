@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Aureo SMT\Desktop\hospital-management\Hospital.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Admin/Views/Contact/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Admin/Views/Contact/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Admin/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Admin/Views/Hospital/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9zcGl0YWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -49,6 +61,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Identity/Pages/Account/DoctorRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxEb2N0b3JSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aureo SMT/Desktop/hospital-management/Hospital.Web/Areas/Identity/Pages/Account/ExternalLogin.cshtml]

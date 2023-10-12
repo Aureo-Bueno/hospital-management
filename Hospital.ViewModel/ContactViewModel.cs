@@ -7,6 +7,7 @@ public class ContactViewModel
     public string Email { get; set; }
     public string Phone { get; set; }
     public Guid HospitalInfoId { get; set; }
+    public HospitalInfo HospitalInfo { get; set; }
 
     public ContactViewModel()
     { }
@@ -17,6 +18,7 @@ public class ContactViewModel
         Email = contact.Email;
         Phone = contact.Phone;
         HospitalInfoId = contact.HospitalId;
+        HospitalInfo = contact.Hospital;
     }
 
     public Contact ConvertViewModel(ContactViewModel viewModel)
@@ -26,7 +28,8 @@ public class ContactViewModel
             Id = viewModel.Id,
             Email = viewModel.Email,
             Phone = viewModel.Phone,
-            HospitalId = viewModel.HospitalInfoId
+            HospitalId = viewModel.HospitalInfoId,
+            Hospital = viewModel.HospitalInfo,
         };
     }
 }

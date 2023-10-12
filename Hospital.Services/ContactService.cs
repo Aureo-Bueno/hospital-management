@@ -31,7 +31,7 @@ public class ContactService : IContactService
         {
             int ExcludeRecords = (pageSize * pageNumber) - pageSize;
 
-            List<Contact>? modelList = _unitOfWork.Repository<Contact>().GetAll().Skip(ExcludeRecords).Take(pageSize).ToList();
+            List<Contact>? modelList = _unitOfWork.Repository<Contact>().GetAll(includeProperties:"Hospital").Skip(ExcludeRecords).Take(pageSize).ToList();
 
             totalCount = _unitOfWork.Repository<Contact>().GetAll().ToList().Count();
 

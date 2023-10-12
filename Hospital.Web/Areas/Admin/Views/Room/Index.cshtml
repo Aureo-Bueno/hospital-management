@@ -48,7 +48,7 @@
                     @Html.DisplayFor(modelItem => item.Status)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.HospitalInfoId)
+                    @Html.DisplayFor(modelItem => item.HospitalInfo.Name)
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new {  id=item.Id }) |

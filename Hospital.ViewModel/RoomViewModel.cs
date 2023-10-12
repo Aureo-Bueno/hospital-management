@@ -8,6 +8,7 @@ public class RoomViewModel
     public string Type { get; set; }
     public string Status { get; set; }
     public Guid HospitalInfoId { get; set; }
+    public HospitalInfo HospitalInfo { get; set; }
 
     public RoomViewModel()
     { }
@@ -19,6 +20,7 @@ public class RoomViewModel
         Type = room.Type;
         Status = room.Status;
         HospitalInfoId = room.HospitalId;
+        HospitalInfo = room.Hospital;
     }
 
     public Room ConvertViewModel(RoomViewModel roomViewModel)
@@ -30,6 +32,7 @@ public class RoomViewModel
             Type = roomViewModel.Type,
             Status = roomViewModel.Status,
             HospitalId = roomViewModel.HospitalInfoId,
+            Hospital = roomViewModel.HospitalInfo,
         };
     }
 }
