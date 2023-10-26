@@ -61,7 +61,7 @@ public class DoctorController : Controller
     public IActionResult AddTiming(TimingViewModel timingViewModel)
     {
         ClaimsIdentity claimsIdentity = (ClaimsIdentity)User.Identity;
-        var claims = ClaimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+        Claim? claims = claimsIdentity?.FindFirst(ClaimTypes.NameIdentifier);
         if (claims is not null)
         {
             timingViewModel.Doctor.Id = claims.Value;

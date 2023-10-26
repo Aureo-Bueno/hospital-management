@@ -5,6 +5,7 @@ namespace Hospital.ViewModel;
 public class TimingViewModel
 {
     public Guid Id { get; set; }
+    public Guid DoctorId { get; set; }
     public ApplicationUser Doctor { get; set; }
     public DateTime Date { get; set; }
     public int MorningShiftStartTime { get; set; }
@@ -32,6 +33,7 @@ public class TimingViewModel
         AfternoonShiftEndTime = timing.AfternoonShiftEndTime;
         Duration = timing.Duration;
         Status = timing.Status;
+        DoctorId = timing.DoctorId;
         Doctor = timing.Doctor;
     }
 
@@ -47,6 +49,7 @@ public class TimingViewModel
             AfternoonShiftEndTime = timingViewModel.AfternoonShiftEndTime,
             Duration = timingViewModel.Duration,
             Status = timingViewModel.Status,
+            DoctorId = timingViewModel.DoctorId,
             Doctor = timingViewModel.Doctor,
         };
     }
